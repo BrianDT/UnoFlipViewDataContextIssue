@@ -1,0 +1,30 @@
+﻿<Page x:Class="UnoFlipViewDataContextIssue.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:controls="using:UnoFlipViewDataContextIssue.Controls"
+      xmlns:local="using:UnoFlipViewDataContextIssue"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+  <ScrollViewer IsTabStop="True">
+    <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="560"/>
+            </Grid.ColumnDefinitions>
+      <StackPanel
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center">
+        <TextBlock 
+          Text="Replicates FlipView DataContext issue"
+          HorizontalAlignment="Center" />
+
+                <Button Margin="0,24,0,0"
+                        Tapped="Button_Tapped">
+                    Show Reports
+                </Button>
+      </StackPanel>
+
+            <controls:SidePanel Grid.Column="1" x:Name="sidePanel"
+                                Visibility="Collapsed"/>
+        </Grid>
+  </ScrollViewer>
+</Page>

@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "UnoFlipViewDataContextIssue",
+  "display": "standalone",
+  "name": "UnoFlipViewDataContextIssue",
+  "short_name": "UnoFlipViewDataContextIssue",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
